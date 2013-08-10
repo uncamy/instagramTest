@@ -18,11 +18,11 @@ var connectionString = process.env.DATABASE_URL || "pg://amy:amy@localhost/hbUse
 
 app.post('/', function(req, res) {
 	console.log(req);
-	/*pg.connect(connectionString, function(err, client, done) {
+	pg.connect(connectionString, function(err, client, done) {
                 client.query('INSERT INTO users VALUES ($1, $2)', [req.body['name'], req.body['email']], function(err, result) {
                         done();
 		});
-	}); */
+	}); 
 });
 
 var port = process.env.PORT || 8080;
