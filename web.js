@@ -2,7 +2,12 @@ var fs = require('fs');
 var express = require('express');
 var pg = require('pg');
 
+
 var app = express.createServer(express.logger());
+app.use(express.bodyParser());
+
+
+
 var buf = fs.readFileSync('index.html', 'utf-8');
 var string =buf.toString();
 app.get('/', function(request, response)  {
