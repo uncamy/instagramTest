@@ -17,7 +17,8 @@ app.get('/', function(request, response)  {
 var connectionString = process.env.DATABASE_URL || "pg://amy:amy@localhost/hbUsers";
 
 app.post('/', function(req, res) {
-	console.log(req);
+	console.log(req.body);
+	res.send('index.html');
 	pg.connect(connectionString, function(err, client, done) {
                 client.query('INSERT INTO users VALUES ($1, $2)', [req.body['name'], req.body['email']], function(err, result) {
                         done();
