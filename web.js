@@ -18,7 +18,10 @@ var connectionString = process.env.DATABASE_URL || "pg://amy:amy@localhost/hbuse
 
 app.post('/', function(req, res) {
 	console.log(req.body);
-	res.send('index.html');
+	var buf2 = fs.readFileSync('index.html', 'utf-8');
+	var string2 =buf2.toString();
+
+	res.send(string2);
 	pg.connect(connectionString, function(err, client, done) {
 		if (err) throw err;
 		client.query('CREATE TABLE IF NOT EXISTS users(name varchar(255),email varchar(255))');
