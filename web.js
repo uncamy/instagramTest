@@ -21,7 +21,7 @@ app.post('/', function(req, res) {
 	res.send('index.html');
 	pg.connect(connectionString, function(err, client, done) {
 		if (err) throw err;
-                client.query('INSERT INTO users VALUES ($1, $2)', [req.body['name'], req.body['email']], function(err, result) {
+                client.query('INSERT INTO dmrmfmikuolmt VALUES ($1, $2)', [req.body['name'], req.body['email']], function(err, result) {
                         done();
 		});
 	}); 
