@@ -14,12 +14,13 @@ app.get('/', function(request, response)  {
   response.send(string);
 });
 
-var connectionString = process.env.DATABASE_URL || "pg://amy:amy@localhost/hbUsers";
+var connectionString = process.env.DATABASE_URL || "pg://amy:amy@localhost/hbusers";
 
 app.post('/', function(req, res) {
 	console.log(req.body);
 	res.send('index.html');
 	pg.connect(connectionString, function(err, client, done) {
+		if (err) throw err;
                 client.query('INSERT INTO users VALUES ($1, $2)', [req.body['name'], req.body['email']], function(err, result) {
                         done();
 		});
