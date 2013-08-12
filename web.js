@@ -21,7 +21,8 @@ app.post('/', function(req, res) {
 	res.send('index.html');
 	pg.connect(connectionString, function(err, client, done) {
 		if (err) throw err;
-                client.query('INSERT INTO dmrmfmikuolmt VALUES ($1, $2)', [req.body['name'], req.body['email']], function(err, result) {
+		client.query('CREATE TABLE IF NOT EXISTS users(name varchar(255),email varchar(255))');
+                client.query('INSERT INTO users VALUES ($1, $2)', [req.body['name'], req.body['email']], function(err, result) {
                         done();
 		});
 	}); 
