@@ -14,19 +14,19 @@ app.config.from_object(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/#dietican', methods = ['GET', 'POST'])
+@app.route('/dietican', methods = ['GET', 'POST'])
 def foo():
     return render_template('test.html')
 
-@app.route('/#about', methods = ['GET', 'POST'])
+@app.route('/about', methods = ['GET', 'POST'])
 def bar():
     return render_template('test.html')
 
-@app.route('/#signin', methods= ['GET', 'POST'])
+@app.route('/signin', methods= ['GET', 'POST'])
 def signin():
     return render_template('test.html')
 
-@app.route('/#contact', methods= ['GET', 'POST'])
+@app.route('/contact', methods= ['GET', 'POST'])
 def contact():
     return render_template('test.html')
 
