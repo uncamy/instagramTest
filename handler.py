@@ -16,11 +16,11 @@ def index():
 
 @app.route('/dietican', methods = ['GET', 'POST'])
 def foo():
-    return render_template('test.html')
+    return render_template('dietican.html')
 
 @app.route('/about', methods = ['GET', 'POST'])
 def bar():
-    return render_template('test.html')
+    return render_template('about.html')
 
 @app.route('/signin', methods= ['GET', 'POST'])
 def signin():
