@@ -4,45 +4,46 @@
     <meta charset="utf-8">
     <title>Healthy Bytes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+
     <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href= "static/custom.css" type ="text/css"/>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800"
-          rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100'
+          rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Mobile-friendly navbar adapted from example.   -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <img src="/static/images/logo.png" class="logo-nav brand">
-          <a class="brand" href="#">Healthy Bytes</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="/about">How it Works</a></li>
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+      <div class="container">
+       <div  class="navbar-head navbar-custom">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="/static/images/logo.png" class="navbar-brand logo-custom">
+       </div>
+
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="/about">How it Works</a></li>
               <li><a href="/dietican">Become a Coach</a></li>
               <li><a href="/about">Company</a></li>
               <li><a href="/signin">Sign in</a></li>
               <li><a href="/contact">Join us!</a></li>
             </ul>
           </div><!--/.nav-collapse -->
-        </div>
+        </div><!-- /.container-fluid -->
       </div>
-    </div>
+
 
     <!-- We use row-fluid inside containers to achieve a resizable layout. -->
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
@@ -52,8 +53,11 @@
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-
-      <div class="span5 offset6 order">
+      <div class="row">
+        <div class="col-md-2 col-md-offset2">
+          <img src="/static/images/iphone.png">
+        </div>
+        <div class="col-md-5 col-md-offset-6">
         <div>
         <h1>Take Photos.</h1>
           <h1>Get Expert Advice.</h1>
@@ -69,7 +73,7 @@
           </div>
                 <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <div class="span5">
+            <div class=".col-md-4">
               <button class="btn btn-success btn-large">Change your diet!</button>
               <a href="#about">Learn more</a>
             </div>
@@ -77,7 +81,7 @@
       </div>
       </div>
       </div>
-
+    </div>
       </div>
       <!-- Wellness providers. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->

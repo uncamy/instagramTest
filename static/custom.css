@@ -33,12 +33,46 @@
 
       /* Main body and headings */
       body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-family: font-family: 'Roboto', sans-serif;
       }
       .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        font-family: font-family: 'Roboto', sans-serif;
         text-align: center;
       }
+      .navbar-custom { 
+          background-color: #1ABC9C;
+          background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1ABC9C), color-stop(100%, #15826E));          
+          background: -webkit-linear-gradient(top, #1ABC9C,#15826E);
+          background: -moz-linear-gradient(top, #1ABC9C,#15826E);
+          background: -o-linear-gradient(top, #1ABC9C,#15826E);
+          background: -ms-linear-gradient(top,#1ABC9C,#15826E);
+          background: linear-gradient(top,#1ABC9C,#15826E);
+          border: none;
+          
+      }
+      .navbar-custom .nav li a {
+          color: #FFF;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          text-shadow: none;
+          background: none;
+          opacity: .9;
+          font-weight: 400;
+          
+      }
+      .navbar-custom .navbar-nav .nav li a:hover {
+          background: #000000;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          color: #fff;
+          opacity: 1;
+      }
+      .logo-custom {
+          width: 250px;
+          height: 70px;
+      }
+
       p.lead {
         padding-top: 1.5%;
         font-size: 24px;
@@ -51,10 +85,11 @@
      
       /* Video pitch and Action */
       .logo-nav {
-          width:35px;max-width:100%
+          padding: 0% 0%;
       }
+      
       .pitch {
-      padding: 0% 5%;
+          ypadding: 0% 5%;
       }
       .order {
         padding: 7% 5%;
