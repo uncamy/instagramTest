@@ -49,40 +49,38 @@
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
     <!-- http://stackoverflow.com/a/12270322 -->
     <div class="jumbotron">
-      <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <div class="container jumbo-container">
+      <!-- Font anod paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row">
-        <div class="col-md-2 col-md-offset2">
-          <img src="/static/images/iphone.png">
-        </div>
-        <div class="col-md-5 col-md-offset-6">
-        <div>
-        <h1>Take Photos.</h1>
-          <h1>Get Expert Advice.</h1>
-        </div>
+      <div class="row-fluid">
+        <div class="pitch col-md-8 col-md-offset-4">
+          <img class="iphone" src="/static/images/iphone.png">
+          <div class="push-right">
+            <div class="lead">
+              Take Photos. <br/>
+              Get Expert Advice.
+            </div>
       <!-- Special typography from Bootstrap for lead paragraph. -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <div>
+
             <p>Research shows that meal logging is effective for weight loss
                because it builds awareness of your diet, but it's often tedious
               and difficult to maintain. Our meal logging is simple. Take photos
               of what you eat and receive expert nutrition advice from your
               health coach.</p>
-          </div>
-                <!-- Standard Bootstrap button. -->
+            <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <div class=".col-md-4">
-              <button class="btn btn-success btn-large">Change your diet!</button>
+            <div class="col-md-offset-6">
+            <button class="btn btn-success btn-large color_button">Change your diet!</button>
               <a href="#about">Learn more</a>
             </div>
-            <br/>
-      </div>
+          </div>
+        </div>
       </div>
       </div>
     </div>
-      </div>
+
       <!-- Wellness providers. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->

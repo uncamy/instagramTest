@@ -1,11 +1,19 @@
-
 .jumbotron {
     position: relative;
     background: url("images/Backgrounds2.png");
     background-size: cover;
     background-repeat: no-repeat; 
+    vertical-align: bottom:
 }
 
+.jumbo-container {
+    position: relative;
+    vertical-align: bottom;
+    bottom:-48px;
+}
+.color_button {
+    .buttonbackground(#1ABC9C,#15826E);
+}
 
       /* Large desktop */
       @media (min-width: 980px) {
@@ -73,45 +81,38 @@
           height: 70px;
       }
 
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
+      .lead {
+        font-size: 48px;
+        color: #00000;
       }
       p {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 24px;
+        color: #444444;
       }
-     
+      
+      
       /* Video pitch and Action */
       .logo-nav {
           padding: 0% 0%;
       }
-      
+      .iphone {
+          padding: 0% 5%;
+          height: 400px;
+          float: left;
+      }
       .pitch {
-          ypadding: 0% 5%;
+          padding-top: 5%;
+          padding-bottom: 0%;
       }
-      .order {
-        padding: 7% 5%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: #339999;
-        font-size: 8px;
-      }
+      
       .btn-group {
         display: inline-block;
       }
       /* Marketing Copy and Footer */
       .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
+        font-size: 20pt; 
+        color: #1ABC9C;
         text-align: justify;
       }
       .asset {
