@@ -16,6 +16,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
 
+    <ul class="nav navbar-nav navbar-right">
+      {% if current_user.is_authenticated() %}
+      <li><a href="{{ url_for('auth.logout') }}">Sign Out</a></li>
+      {% else %}
+      <li><a href="{{ url_for('auth.login') }}">Sign In</a></li>
+      {% endif %}
+    </ul>
+
+
     <!-- Mobile-friendly navbar adapted from example.   -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top navbar-custom">
@@ -73,7 +82,7 @@
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <div class="col-md-offset-6">
             <button class="btn btn-success btn-large color_button">Change your diet!</button>
-              <a href="#about">Learn more</a>
+              <a href="/signup">Learn more</a>
             </div>
           </div>
         </div>
